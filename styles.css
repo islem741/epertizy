@@ -1,0 +1,94 @@
+/* Styles généraux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+}
+
+header {
+    background-color: #222;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 5%;
+}
+
+header .logo a {
+    font-size: 25px;
+    color: #29d9d5;
+}
+
+header .menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    margin: 0 15px;
+    list-style-type: none;
+}
+
+.menu li a {
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Styles pour le formulaire de connexion */
+#login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #29d9d5;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #29d9d5;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.form-group input:focus {
+    border-color: #fff;
+    outline: none;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 10px;
+    background-color: #29d9d5;
+    border: none;
+    border-radius: 5px;
+    color:}

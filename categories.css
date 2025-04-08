@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    background-color: #222;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 5%;
+}
+
+.logo a {
+    font-size: 25px;
+    color: #29d9d5;
+}
+
+.logo a span {
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    margin: 0 15px;
+    list-style-type: none;
+}
+
+.menu li a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.btn-login {
+    color: #29d9d5;
+    font-size: 14px;
+    border: 2px solid #29d9d5;
+    padding: 5px 20px;
+    transition: 0.5s;
+    font-weight: bolder;
+}
+
+.btn-login:hover {
+    background-color: #29d9d5;
+    color: #fff;
+}
+
+#home {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #333), url("images/img1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#home h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: transparent;
+    text-transform: lowercase;
+    -webkit-text-stroke: #fff 0.02px;
+}
+
+#home h4 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+#home p {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.home-btn {
+    margin-bottom: 20px;
+}
+
+footer {
+    width: 100%;
+    background-color: #222;
+    padding: 10px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+}
+
+footer p span {
+    color: #29d9d5;
+}
+
+/* Responsive Styles */
+@media (max-width: 750px) {
+    header .menu {
+        display: none;
+    }
+    
+    #home h2 {
+        font-size: 18px;
+        color: #fff;
+    }
+    
+    #home h4 {
+        font-size: 28px;
+    }
+
+    #home p {
+        text-align: center;
+        font-size: 10px;
+    }
+}
