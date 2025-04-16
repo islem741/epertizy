@@ -1,58 +1,87 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscription</title>
-    <link rel="stylesheet" href="styles2.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="sigunup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <a href="#">MonSite<span>Expertise</span></a>
-        </div>
-        <ul class="menu">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="#">À Propos</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+            <a href="index.html"> <span>exper</span>TIZY</a>
+        
+
+        <div class="responsive-menu"></div>
     </header>
-
-    <section>
-        <div id="signup-container">
-            <h2>Inscription</h2>
-            <form action="#" method="POST">
-                <div class="form-group">
-                    <label for="first-name">Prénom</label>
-                    <input type="text" id="first-name" name="first-name" required>
-                </div>
-                <div class="form-group">
-                    <label for="last-name">Nom</label>
-                    <input type="text" id="last-name" name="last-name" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Numéro de Téléphone</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Mot de Passe</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <button type="submit" class="btn-login">S'inscrire</button>
-            </form>
-            <div class="login_link">
-                <p>Pas encore de compte ? <a href="login.html" class="btn-login">login</a></p>
-            </div>
+    <div class="signup-container">
+        <div class="signup-header">
+            <h1>Create Your Account</h1>
+            <p>Join our community today</p>
         </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2023 MonSiteExpertise. Tous droits réservés.</p>
-    </footer>
+        <form id="signup-form">
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+
+            <div class="account-type">
+                <h3>Account Type</h3>
+                <div class="type-options">
+                    <label class="type-option" for="simple-account">
+                        <input type="radio" id="simple-account" name="account-type" value="simple" required>
+                        <i class="fas fa-user"></i>
+                        <p>Simple Account</p>
+                    </label>
+                    
+                    <label class="type-option" for="expert-account">
+                        <input type="radio" id="expert-account" name="account-type" value="expert">
+                        <i class="fas fa-user-tie"></i>
+                        <p>Expert Account</p>
+                    </label>
+                </div>
+            </div>
+
+            <div class="terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+            </div>
+
+            <button type="submit" class="submit-btn">Sign Up</button>
+        </form>
+
+        <div class="login-link">
+            <p>Already have an account? <a href="login.html">Log in</a></p>
+        </div>
+    </div>
+
+    <script src="signup.js"></script>
 </body>
 </html>
