@@ -15,12 +15,20 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #f8f8f8;
+    background-color: #000000;
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
+}
+header  .logo a {
+    font-size: 25px;
+    color: #29d9d5;
+ 
+}
+header  .logo a span {
+    color: #fff;
 }
 
 .signup-container {
